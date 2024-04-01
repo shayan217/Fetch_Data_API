@@ -24,7 +24,7 @@ class _MyControllerState extends State<MyController> {
       final jsonData = jsonDecode(response.body);
       return APIFetch.fromJson(jsonData);
     } else {
-      throw Exception('Failed to load data: ${response.reasonPhrase}');
+      throw Exception('Failed to load api data: ${response.reasonPhrase}');
     }
   }
 
